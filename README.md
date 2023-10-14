@@ -1,0 +1,24 @@
+1. 레벨 경험치
+
+```gradle
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.0'
+    id 'kr.entree.spigradle' version '2.4.3'
+}
+
+group = 'kr.acog'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly spigot("1.19.2")
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1'
+    compileOnly 'io.typecraft:bukkit-kotlin-serialization:0.1.0'
+    implementation 'io.typecraft:command-bukkit:0.8.0'
+    implementation 'io.typecraft:bukkit-view-core:5.1.2'
+}
+```

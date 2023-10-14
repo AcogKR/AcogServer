@@ -1,0 +1,13 @@
+rootProject.name = 'AcogServer'
+
+include(
+        'core',
+        'level',
+        'setting',
+        'party',
+        'manager'
+)
+
+rootProject.children.forEach {
+    it.name = "acog-${it.name}"
+}

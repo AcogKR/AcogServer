@@ -1,0 +1,29 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.0'
+    id 'kr.entree.spigradle' version '2.4.3'
+}
+
+group = 'kr.acog'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly spigot("1.19.2")
+    implementation 'io.typecraft:command-bukkit:0.8.0'
+
+    compileOnly project(":acog-level")
+}
+
+spigot {
+    depends = [
+            'acog-level'
+    ]
+
+    commands {
+        create("관리")
+    }
+}

@@ -1,0 +1,5 @@
+name: CorePlugin
+version: 1.0
+main: kr.acog.core.CorePlugin
+api-version: 1.19
+author: Acog
